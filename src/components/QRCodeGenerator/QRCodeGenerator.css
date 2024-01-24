@@ -1,0 +1,92 @@
+.QRCodeGenerator {
+    background-color: #3c4579;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.QRCodeGenerator h2 {
+    color: #f1f0f0;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.QRCodeGenerator input[type="text"],
+.QRCodeGenerator select,
+.QRCodeGenerator input[type="color"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: calc(100% - 22px);
+}
+
+.QRCodeGenerator input[type="color"] {
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.QRCodeGenerator button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e317a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.QRCodeGenerator button:hover {
+    background-color: #0056b3;
+}
+
+.QRCodeGenerator .download-buttons {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #1e317a;
+}
+
+.QRCodeGenerator .download-buttons:hover {
+    background-color: #1e317a;
+}
+
+.QRCodeGenerator img {
+    margin-top: 20px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .QRCodeGenerator {
+      width: 80%;
+      
+      padding: 15px;
+    }
+  
+    .QRCodeGenerator h2 {
+      font-size: 20px;
+    }
+  
+    .QRCodeGenerator button, 
+    .QRCodeGenerator input[type="text"], 
+    .QRCodeGenerator select {
+      font-size: 14px;
+    }
+  
+    .QRCodeGenerator input[type="color"] {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
